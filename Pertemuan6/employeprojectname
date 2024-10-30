@@ -1,0 +1,9 @@
+SELECT 
+    Employee.name AS EmployeeName,
+    Projects.ProjectName AS ProjectName
+FROM 
+    Employee
+LEFT JOIN 
+    Projects ON Employee.DepartmentsID = Projects.DepartmentsID
+ORDER BY 
+    Employee.name;

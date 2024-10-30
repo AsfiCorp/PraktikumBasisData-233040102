@@ -1,0 +1,63 @@
+INSERT INTO Departments (DepartmentsID, DepartmentName) VALUES
+(1, 'IT'),
+(2, 'Kedokteran'),
+(3, 'Percintaan');
+
+INSERT INTO Projects (ProjectsID, ProjectName, DepartmentsID) VALUES
+(1, 'Project SQL', 1),
+(2, 'Project Postgrees', 1),
+(3, 'Project HTML', 1),
+(4, 'Project Operasi', 2),
+(5, 'Project Anak', 2),
+(6, 'Project Saraf', 2,
+(7, 'Project Nikah', 3),
+(8, 'Project Pacaran', 3),
+(9, 'Project Hts', 3),
+(10, 'Project Additional', 1);
+
+INSERT INTO Employee (EmployeeID, name, DepartmentsID, ManagerID) VALUES
+(1, 'Alice', 1, NULL), 
+(2, 'Bob', 2, NULL),   
+(3, 'Carol', 3, NULL); 
+
+INSERT INTO Employee (EmployeeID, name, DepartmentsID, ManagerID) VALUES
+(4, 'Dave', 1, NULL),
+(5, 'Eve', 1, NULL),
+(6, 'Frank', 1, 1),
+(7, 'Grace', 1, 1),
+(8, 'Hannah', 1, 1),
+(9, 'Ivan', 1, 1),
+(10, 'Jack', 1, 1),
+(11, 'Karen', 1, 1),
+(12, 'Leo', 1, 1),
+
+(13, 'Mallory', 2, 2),
+(14, 'Niaj', 2, 2),
+(15, 'Olivia', 2, 2),
+(16, 'Peggy', 2, 2),
+(17, 'Quentin', 2, 2),
+(18, 'Randy', 2, 2),
+(19, 'Sybil', 2, 2),
+(20, 'Trudy', 2, 2),
+(21, 'Uma', 2, 2),
+
+(22, 'Victor', 3, 3),
+(23, 'Wendy', 3, 3),
+(24, 'Xander', 3, 3),
+(25, 'Yolanda', 3, 3),
+(26, 'Zane', 3, 3),
+(27, 'Zoe', 3, 3),
+(28, 'Blake', 3, 3),
+(29, 'Chloe', 3, 3),
+(30, 'Dylan', 3, 3);
+
+
+
+INSERT INTO Salary (EmployeeID, Salaries) VALUES
+(1, 10000.00), (2, 9500.00), (3, 9000.00),
+(4, 5000.00), (5, 5100.00), (6, 5200.00), (7, 5300.00), (8, 5400.00),
+(9, 5500.00), (10, 5600.00), (11, 5700.00), (12, 5800.00),
+(13, 6000.00), (14, 6100.00), (15, 6200.00), (16, 6300.00), (17, 6400.00),
+(18, 6500.00), (19, 6600.00), (20, 6700.00), (21, 6800.00),
+(22, 7000.00), (23, 7100.00), (24, 7200.00), (25, 7300.00), (26, 7400.00),
+(27, 7500.00), (28, 7600.00), (29, 7700.00), (30, 7800.00);

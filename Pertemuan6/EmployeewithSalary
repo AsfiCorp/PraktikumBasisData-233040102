@@ -1,0 +1,19 @@
+SELECT 
+    Employee.name AS EmployeeName,
+    Salary.Salaries AS Salary
+FROM 
+    Employee
+LEFT JOIN 
+    Salary ON Employee.EmployeeID = Salary.EmployeeID
+
+UNION
+
+SELECT 
+    Employee.name AS EmployeeName,
+    Salary.Salaries AS Salary
+FROM 
+    Salary
+RIGHT JOIN 
+    Employee ON Employee.EmployeeID = Salary.EmployeeID
+ORDER BY 
+    EmployeeName;

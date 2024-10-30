@@ -1,0 +1,7 @@
+SELECT 
+    e.name AS EmployeeName,
+    e.ManagerID AS ManagerID
+FROM 
+    Employee e
+ORDER BY 
+    e.name;

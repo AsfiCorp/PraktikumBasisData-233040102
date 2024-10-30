@@ -1,0 +1,26 @@
+create TABLE Departments (
+    DepartmentsID int primary KEY,
+    DepartmentName VARCHAR(50)
+);
+
+create TABLE Projects (
+    ProjectsID int primary key,
+    ProjectName VARCHAR(50),
+    DepartmentsID int, foreign key (DepartmentsID) REFERENCES Departments(DepartmentsID)
+);
+
+Create TABLE Employee (
+    EmployeeID int primary key,
+    name varchar(50),
+    DepartmentsID int,
+    ManagerID int,
+    FOREIGN KEY (DepartmentsID) REFERENCES Departments(DepartmentsID),
+    FOREIGN KEY (ManagerID) REFERENCES Employee(EmployeeID)
+);
+
+CREATE TABLE Salary (
+    EmployeeID int,
+    Salaries DECIMAL (10,2),
+    FOREIGN KEY (EmployeeID) REFERENCES Employee(EmployeeID)
+    
+);

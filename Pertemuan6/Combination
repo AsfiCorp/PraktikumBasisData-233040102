@@ -1,0 +1,9 @@
+SELECT 
+    Employee.name AS EmployeeName,
+    Projects.ProjectName AS ProjectName
+FROM 
+    Employee
+CROSS JOIN 
+    Projects
+ORDER BY 
+    Employee.name, Projects.ProjectName;
